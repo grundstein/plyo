@@ -1,0 +1,51 @@
+{
+  "name": "plyo",
+  "version": "0.0.0",
+  "description": "optimize ply files, reduce x,y,z and nx, ny, nz precision, merge duplicate vertices, remove normals, remove alpha",
+  "bin": {
+    "plyo": "src/bin.js"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "dev": "./src/bin.js -i docs --remove-normals",
+    "format": "f -w",
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grundstein/plyo.git"
+  },
+  "author": "TheSystemCollective",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/grundstein/plyo/issues"
+  },
+  "homepage": "https://github.com/grundstein/plyo#readme",
+  "dependencies": {
+    "@magic/cli": "0.0.43",
+    "@magic/fs": "0.0.27"
+  },
+  "devDependencies": {
+    "@magic/format": "0.0.44",
+    "@magic/test": "0.2.14"
+  },
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    },
+    {
+      "name": "daniela weiss",
+      "github": "mslitto"
+    }
+  ],
+  "keywords": [
+    "optimize",
+    "ply",
+    "cli"
+  ]
+}

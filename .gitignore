@@ -1,0 +1,10 @@
+coverage
+node_modules
+.DS_Store
+docs/**/*.webp
+docs/**/*.m4a
+docs/**/*.ogg
+docs/**/*.gz
+docs/**/*.mp3
+docs/**/*.webm
+
