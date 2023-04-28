@@ -1,6 +1,6 @@
 {
   "name": "plyo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "optimize ply files, reduce x,y,z and nx, ny, nz precision, merge duplicate vertices, remove normals, remove alpha",
   "bin": {
     "plyo": "src/bin.js"
