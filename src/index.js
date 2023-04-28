@@ -1,6 +1,7 @@
 import path from 'node:path'
 
 import fs from '@magic/fs'
+import is from '@magic/types'
 import log from '@magic/log'
 
 import { combineColors } from './lib/index.js'
@@ -208,7 +209,11 @@ const convertDir = async args => {
 }
 
 export const plyo = async args => {
-  const { input } = args
+  let { input } = args
+
+  if (!is.array(input)) {
+    input = [input]
+  }
 
   await Promise.all(
     input.map(async fd => {
